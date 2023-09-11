@@ -1,0 +1,104 @@
+body{
+	margin:0;
+	padding:20px;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+input[type=search]{
+  height: 35px;
+  margin: 2px;
+  border: 1px solid lightgray;
+}
+.button {
+  border: 1px solid lightgray;
+  width: fit-content;
+  height: fit-content;
+  margin: 2px;
+  padding: 2px;
+  
+}
+
+.button1 {
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.button1:hover {
+  color: white;
+  background-color: black;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+img{
+  width:20px;
+  margin-left: 10px;
+}
+.green{
+color:green;
+background-color: rgb(66, 247, 66);
+}
+.org{
+color:orangered;
+background-color: rgb(251, 224, 69);
+}
+/*responsive*/
+
+@media(max-width: 568px){
+  .main{
+    display: block;
+  }
+
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		position: relative;
+    font-size: 12px;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:10px;
+		font-size:12px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+

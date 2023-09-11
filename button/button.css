@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.margin button{
+    margin: 0px 0px 0px 45px;
+}
+.main {
+    border: 2px dashed gray;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.color {
+    color: #010155;
+}
+
+.color1:hover {
+    color: rgb(9, 122, 250);
+}
+
+.activ:active {
+    color: rgb(9, 122, 250);
+}
+
+.mainbton .button {
+    border: 1px solid #010155;
+    background-color: white;
+}
+
+
+
+.widt {
+    width: fit-content !important;
+    border-radius: 50px !important;
+}
+
+.mainbton {
+    display: flex;
+    padding: 40px;
+}
+
+.mainbton button {
+    display: flex;
+    font-size: large;
+    color: white;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(9, 122, 250);
+    border: none;
+    border-radius: 10px;
+}
+
+.mainbton img {
+    padding: 7px;
+    width: 25px;
+}
+
+
+.hover:hover {
+    background-color: navy;
+}
+
+.click:active {
+    background-color: rgb(0, 0, 92);
+}
+
+.disable {
+    background-color: rgba(153, 150, 150, 0.655) !important;
+    cursor: not-allowed;
+}
+
+label {
+    padding: 10px 0px 0px 0px;
+}
+
+@media(max-width:568px) {
+    .mainbton {
+        display: block;
+        column-count: 2;
+    }
+    .margin{
+        margin: 0px 0px 0px -10px;
+    }
+}
